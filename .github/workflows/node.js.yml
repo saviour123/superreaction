@@ -11,9 +11,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '14'
-    
-    # - name: Install Dependencies
-    # - run: yarn install
+
+    - name: Install Dependencies
+    - run: yarn install
 
     # - name: run tests
     # - run: ci=true yarn test
