@@ -17,4 +17,4 @@ jobs:
       - run: yarn build
       - run: | #run surge token to obtain deployment token
           npm install --global surge
-      - run: surge ./build superreaction.surge.sh --token $SURGE_TOKEN
+      - run: surge ./build superreaction.surge.sh --token ${{ secrets.SURGE_TOKEN }}
