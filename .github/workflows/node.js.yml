@@ -10,6 +10,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "14"
+        env:
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
       - run: yarn install
       - run: ci=true yarn test
       - run: yarn build
