@@ -12,11 +12,8 @@ jobs:
         with:
           node-version: "14"
       - run: yarn install
-      - name: run tests
       - run: ci=true yarn test
-      - name: build Project
       - run: yarn build
-      - name: Deploy to Surge
       - run: | #run surge token to obtain deployment token
           npm install --global surge
           surge public superreaction.surge.sh
